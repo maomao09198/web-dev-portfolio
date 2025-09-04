@@ -1,170 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Devoloper Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roja Karim | Full Stack Developer</title>
 
-    <link rel="stylesheet" href="styles/portfolio.css">
-    <script src="https://kit.fontawesome.com/9e5281f83e.js" crossorigin="anonymous"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/9e5281f83e.js" crossorigin="anonymous"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="styles/portfolio.css">
 </head>
-<body class="open-sans-normal">
-    <header class="header secondary-bg">
-         <nav>
-            <h3 class="nav-title">R0<span class="text-primary">J</span>A</h3>
-            <ul>
-                <li><a class="dark-2" href="">Portfolio</a></li>
-                <li><a class="dark-2" href="">Blog</a></li>
-                <li><a href=""><button class="btn-primary">Hire Me</button></a></li>
-            </ul>
-         </nav>
-         <div class="banner">
-            <div class="banner-content">
-                <h4 class="banner-greetings dark-2">Hi, I am</h4>
-                <h1 class="banner-title">Roja Karim</h1>
-                <p class="banner-description">
-                    Creative web developer crafting clean, responsive, and user-friendly websites. I specialize in front-end development, turning ideas into modern and functional digital experiences. With a passion for design and detail, I aim to build solutions that are simple, fast, and effective. Always learning, always improving.
-                </p><br>
-                <button class="btn-primary"><i class="fa-solid fa-download"></i>Download CV</button><br><br>
-               
-            </div>
-           
-         </div>
-    </header>
+<body>
 
-    <main>
-         <section class="about secondary-bg">
-            <h3 class="section-title">About Me</h3>
-             <p class="section-description">
-                I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional resulfs while working with me. Delivering work within time and budget which meets clients requirements in our mata.
-             </p>
-             <div class="about-items">
-                <!-- .about-item*4>p.item-title+p.item-description -->
-                <div class="about-item">
-                    <p class="item-title">Name</p>
-                    <p class="item-description">Roja Karim</p>
-                </div>
-                <div class="about-item">
-                    <p class="item-title">Email</p>
-                    <p class="item-description">rojakorim42@gmail.com</p>
-                </div>
-                <div class="about-item">
-                    <p class="item-title">Date of Birth</p>
-                    <p class="item-description">August 12,2005</p>
-                </div>
-                <div class="about-item">
-                    <p class="item-title">Form</p>
-                    <p class="item-description">Rajshahi, BD</p>
-                </div>
-             </div>
-         </section>      
-        <!-- What is do section start -->
-         <section class="skills">
-            <h3 class="section-title text-center">What I do</h3>
-            <p class="section-description text-center">I have more than 2 years experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies i use. Want to find out more about my experience? Check out my online resume and project portfolio.</p>
+<!-- Particle Background -->
+<canvas id="particles"></canvas>
 
-            <div class="skills-container">
-                <!-- .skill*4>img+h4.skill-title+p.skill-description -->
-                 <div class="skill">
-                    <img src="images/icons/js.png" alt="">
-                    <h4 class="skill-title">Vanilla JavaScript</h4>
-                    <p class="skill-description">Skilled in building interactive, dynamic, and responsive web features 
-                     using pure JavaScript without frameworks</p>
-                 </div>
-                 <div class="skill">
-                    <img src="images/icons/react.png" alt="">
-                    <h4 class="skill-title">React</h4>
-                    <p class="skill-description">Experienced in building modern, scalable, and component-based web applications 
-                    with React and reusable UI design.</p>
-                 </div>
-                 <div class="skill">
-                    <img src="images/icons/nodejs.png" alt="">
-                    <h4 class="skill-title">Node.js</h4>
-                    <p class="skill-description">Skilled in developing scalable backend solutions, REST APIs, and server-side 
-                    applications using Node.js.</p>
-                 </div>
-                 <div class="skill">
-                    <img src="images/icons/mongo.png" alt="">
-                    <h4 class="skill-title">MongoDB</h4>
-                    <p class="skill-description">Experienced in designing, managing, and integrating NoSQL databases with 
-                     scalable backend applications using MongoDB.</p>
-                 </div>
-            </div>
-         </section>
-         <section class="resume">
-            <h3 class="section-title text-center">A summary of My Resume</h3>
-            <div class="resume-container">
-                <!-- .resume-column*2>h3.resume-column-title+.experience*3>h4.experience-title+h5.experience-sub-title+.experience-description -->
+<!-- Header -->
+<header>
+  <nav>
+    <h3 class="nav-title">R0<span class="highlight">J</span>A</h3>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="btn-primary">Hire Me</a>
+    </div>
+  </nav>
 
-                <div class="resume-column">
-                    <h3 class="resume-column-title">My Education</h3>
-                    <div class="experience">
-                        <h4 class="experience-title">Bachelors in Computer Engineering</h4>
-                        <h5 class="experience-sub-title">Rajshahi Science And Technology University / 2023 - 2027</h5>
-                       
-                    </div>
-                    <hr>
-                    <div class="experience">
-                        <h4 class="experience-title">Higher Secondary Certificate</h4>
-                        <h5 class="experience-sub-title">Varendra College / 2022 - 2023</h5>
-               
-                    </div>
-                    <hr>
-                    <div class="experience">
-                        <h4 class="experience-title">Secondary School Certificate</h4>
-                        <h5 class="experience-sub-title">Govt.PN Girls High School / 2020 - 2021</h5>
-                        
-                    </div>
-                </div>
-                
-                <div class="resume-column">
-                    <h3 class="resume-column-title">My Experience</h3>
-                    <div class="experience">
-                        <h4 class="experience-title">Sr. Font End Developer</h4>
-                        <h5 class="experience-sub-title">Apple Inc / 2020 - Current</h5>
-                       
-                    </div>
-                    <hr>
-                    <div class="experience">
-                        <h4 class="experience-title">Jr. Font End Developer</h4>
-                        <h5 class="experience-sub-title">Dribbble Inc / 2018 - 2022</h5>
-                       
-                    </div>
-                    <hr>
-                    <div class="experience">
-                        <h4 class="experience-title">HTML Developer</h4>
-                        <h5 class="experience-sub-title">Adobe Inc / 2017 - 2018</h5>
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="text-center resume-download-cv">
-                <button class="btn-primary ">Download CV</button>
-            </div>
-         </section>
-    </main>
-    <footer class="secondary-bg">
-         <div class="footer-column ">
-              <h3 class="section-title">Lets Connect</h3>
-              <p>Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET, Monday through Friday.</p>
-              <div>
-                <a href=""><img src="images/icons/facebook.png" alt=""></a>
-                <a href=""><img src="images/icons/insta.png" alt=""></a>
-                <a href=""><img src="images/icons/twitter.png" alt=""></a>
-              </div>
-         </div>
-         <div class="footer-column">
-            <h3 class="section-title">Let's Message me</h3>
-            <form action="">
-                <input type="text" name="" id="" placeholder="Your Name">
-                <input type="email" name="" id="" placeholder="Your Email">
-                <textarea name="" id="" cols="30" rows="20" placeholder="Message"></textarea>
-                <input class="btn-primary" type="submit" value="submit">
-            </form>
-         </div>
-    </footer>
+  <div class="banner">
+    <h4 class="fade-in">Hello! I’m</h4>
+    <h1 class="banner-title fade-in">Roja Karim</h1>
+    <p class="banner-description fade-in">
+      Full-stack web developer crafting modern, interactive, and responsive web applications. Skilled in building scalable, efficient, and creative digital experiences.
+    </p>
+    <a href="files/Resume Roja Karim.pdf" download>
+  <button class="btn-primary"></i> Download CV</button>
+</a>
+  </div>
+</header>
+
+<main>
+  <!-- About Section -->
+  <section id="about" class="section about fade-in-section">
+    <h3 class="section-title">About Me</h3>
+    <p class="section-description">
+      I am a passionate full-stack web developer with expertise in modern web technologies. I build user-friendly, creative, and interactive websites that are light, responsive, and visually engaging.
+    </p>
+    <div class="about-items">
+      <div class="about-item glass"><p class="item-title">Name</p><p class="item-description">Roja Karim</p></div>
+      <div class="about-item glass"><p class="item-title">Email</p><p class="item-description">rojakorim42@gmail.com</p></div>
+      <div class="about-item glass"><p class="item-title">DOB</p><p class="item-description">Aug 12, 2005</p></div>
+      <div class="about-item glass"><p class="item-title">Location</p><p class="item-description">Rajshahi, Bangladesh</p></div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills fade-in-section">
+    <h3 class="section-title text-center">Skills</h3>
+    <div class="skills-container">
+      <div class="skill glass">
+        <h4 class="skill-title">JavaScript</h4>
+        <div class="skill-bar"><div class="skill-progress" data-progress="95%"></div></div>
+      </div>
+      <div class="skill glass">
+        <h4 class="skill-title">React</h4>
+        <div class="skill-bar"><div class="skill-progress" data-progress="90%"></div></div>
+      </div>
+      <div class="skill glass">
+        <h4 class="skill-title">Node.js</h4>
+        <div class="skill-bar"><div class="skill-progress" data-progress="85%"></div></div>
+      </div>
+      <div class="skill glass">
+        <h4 class="skill-title">MongoDB</h4>
+        <div class="skill-bar"><div class="skill-progress" data-progress="80%"></div></div>
+      </div>
+      <div class="skill glass">
+        <h4 class="skill-title">HTML & CSS</h4>
+        <div class="skill-bar"><div class="skill-progress" data-progress="95%"></div></div>
+      </div>
+      <div class="skill glass">
+        <h4 class="skill-title">Express.js</h4>
+        <div class="skill-bar"><div class="skill-progress" data-progress="85%"></div></div>
+      </div>
+      <div class="skill glass">
+        <h4 class="skill-title">Git & GitHub</h4>
+        <div class="skill-bar"><div class="skill-progress" data-progress="90%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section resume fade-in-section">
+    <h3 class="section-title text-center">Experience</h3>
+    <div class="resume-container">
+      <div class="resume-column glass">
+        <h4>Full Stack Web Developer</h4>
+        <p>Freelance / 2022 - Current</p>
+        <ul>
+          <li>Developed dynamic web applications using React, Node.js, and MongoDB.</li>
+          <li>Created responsive, user-friendly UI with animations and modern design.</li>
+          <li>Optimized backend APIs and database performance for large-scale apps.</li>
+        </ul>
+      </div>
+      <div class="resume-column glass">
+        <h4>Sr. Front End Developer</h4>
+        <p>Apple Inc / 2020 - 2022</p>
+        <ul>
+          <li>Implemented interactive front-end components using React.</li>
+          <li>Worked on cross-browser, responsive, and high-performance web apps.</li>
+          <li>Collaborated with UX/UI designers for polished visuals.</li>
+        </ul>
+      </div>
+      <div class="resume-column glass">
+        <h4>Jr. Front End Developer</h4>
+        <p>Dribbble Inc / 2018 - 2020</p>
+        <ul>
+          <li>Built reusable components and integrated APIs.</li>
+          <li>Enhanced website animations and user engagement.</li>
+          <li>Maintained and improved existing client projects.</li>
+        </ul>
+      </div>
+      <div class="resume-column glass">
+        <h4>HTML Developer</h4>
+        <p>Adobe Inc / 2017 - 2018</p>
+        <ul>
+          <li>Developed HTML/CSS templates and interactive pages.</li>
+          <li>Assisted in front-end performance optimization.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects fade-in-section">
+    <h3 class="section-title text-center">Projects</h3>
+    <div class="projects-container">
+      <div class="project-card glass">
+        <h4>Portfolio Website</h4>
+        <p>Interactive portfolio with animations, light, cute, and futuristic design.</p>
+      </div>
+      <div class="project-card glass">
+        <h4>Task Manager App</h4>
+        <p>Full-stack task management app with React, Node.js, and MongoDB.</p>
+      </div>
+      <div class="project-card glass">
+        <h4>E-commerce Store</h4>
+        <p>Modern online store with sleek UI, animations, and scalable backend.</p>
+      </div>
+      <div class="project-card glass">
+        <h4>Blog Platform</h4>
+        <p>Dynamic blogging platform with user authentication and interactive features.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Contact Section -->
+<footer id="contact" class="section">
+  <div class="footer-column glass">
+    <h3>Connect with Me</h3>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+  <div class="footer-column glass">
+    <h3>Message Me</h3>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Message"></textarea>
+      <input class="btn-primary" type="submit" value="Send">
+    </form>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
