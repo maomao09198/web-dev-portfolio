@@ -66,3 +66,32 @@ footer .social-icons a:hover { color:#fff; transform: scale(1.2); }
 .fade-in-section { opacity:0; transform:translateY(30px); transition: all 1s ease-out; }
 .fade-in { opacity:0; transform:translateY(20px); animation: fadeIn 1s forwards; }
 @keyframes fadeIn { to { opacity:1; transform:translateY(0); } }
+
+
+
+/* Responsive Design */
+
+/* Medium Devices (Tablets) */
+@media (max-width:992px){
+  nav { flex-direction:column; padding:1rem; }
+  .nav-links { flex-wrap:wrap; gap:0.5rem; justify-content:center; margin-top:0.5rem; }
+  .banner-title { font-size:2.5rem; }
+  .banner-description { font-size:1rem; max-width:90%; }
+  .about-items, .skills-container, .projects-container, .resume-container { flex-direction:column; align-items:center; }
+  .skill, .project-card, .resume-column, .about-item { width:90%; }
+}
+
+/* Small Devices (Phones) */
+@media (max-width:600px){
+  .nav-title { font-size:1.5rem; }
+  .nav-links a { padding:0.4rem 0.8rem; font-size:0.9rem; }
+  .banner-title { font-size:2rem; }
+  .banner-description { font-size:0.9rem; }
+  .skills-container { gap:0.8rem; }
+  .skill { width:100%; }
+  .projects-container { gap:1rem; }
+  .project-card { width:100%; }
+  .resume-column { width:100%; }
+  footer { flex-direction:column; gap:1.5rem; }
+  footer form input, footer form textarea { width:100%; }
+}
